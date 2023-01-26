@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './SortingTools.module.scss';
 import {
     reverseProductsArray,
@@ -14,7 +14,11 @@ const SortingTools = () => {
         (state) => state.products.currentSortCondition
     );
 
-    const [activeElement, setActiveElement] = useState('by-name');
+    const [activeElement, setActiveElement] = useState(currentSortCondition);
+
+    useEffect(() => {
+        dispatch(sortProductsByCurrentSortCondition);
+    }, [activeElement]);
 
     function handleSortProducts(select: string) {
         // если запрошенный способ сортироки совпадает с текущим - вызывается функция разворота массива
@@ -27,14 +31,6 @@ const SortingTools = () => {
         dispatch(sortProductsByCurrentSortCondition());
         setActiveElement(select);
     }
-
-    // function addActiveClassToSortElement(
-    //     e: string | React.MouseEvent<HTMLLIElement, MouseEvent>
-    // ) {
-    //     console.log(e.target.parentElement);
-    //     e.target.parentElement.forEach((item) => item.classRemove('active'));
-    //     e.target.className = `${e.target.className}  active`;
-    // }
 
     return (
         <div className={styles.sortingTools}>
