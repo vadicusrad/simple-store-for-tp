@@ -1,0 +1,73 @@
+.prices {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    &__newPrice {
+        margin-left: auto;
+    }
+  
+    &__newPriceValue {
+        color: #344050;
+        font-size: 52px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        & > :nth-child(2) {
+            font-size: 28px;
+            vertical-align: top;
+            padding-bottom: 17px;
+            line-height: 61px;
+        }
+       
+    }
+
+    &__oldPriceValue {
+        position: relative;
+            font-size: 32px;
+            line-height: 17px;
+            color: #94979C;
+            font-weight: 600;
+            margin: 0 auto;
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+
+            & > :nth-child(2) {
+            font-size: 18px;
+            vertical-align: top;
+            padding-bottom: 10px;
+            line-height: 16px;
+        }
+
+            &::after {
+                content: '';
+                width: 105%;
+                height: 4px;
+                background-color: red;
+                position: absolute;
+                top: 16px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #94979C;
+    }
+
+    &__rublSimbol {
+        font-weight: 900;
+        height: 52px;
+    }
+}

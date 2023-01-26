@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap');
+// немного изменяю шрифт на похожий потому что Poppins кк в макете не поддерживает кириллицу.
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+#root {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+   // сделал максимально похожим на poppins
+  letter-spacing: -0.5px;    
+}
+
+ul {
+  list-style: none;
+}
+
+

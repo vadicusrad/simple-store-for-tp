@@ -1,0 +1,52 @@
+.listRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 74px;
+    grid-gap:20px;
+    padding: 17px 52px 17px 22px;
+    color: #4D5969;
+
+    &__img {
+        width: 60px;
+        height: 40px;
+        object-fit: contain;
+    }
+
+    &__desc {
+        width: 500px;
+        flex-grow: 1;
+    }
+
+    &__name {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 7px;
+        
+    }
+
+    &__category {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 17px;
+        color: #9DA8BA;
+        margin: 0;
+    }
+
+    &__views {
+        width: 150px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    &__dates {
+        width: 124px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+   
+}

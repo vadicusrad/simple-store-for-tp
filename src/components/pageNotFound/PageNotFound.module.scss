@@ -1,0 +1,19 @@
+.pageNotfound {
+   padding: 136px 120px;
+
+   &__header {
+        font-size: 42px;
+        font-weight: 600;
+        margin-bottom: 20px;
+   }
+
+   &__text {
+      font-size: 24px;
+      margin-bottom: 40px;
+   }
+
+   &__link {
+      font-size: 24px;
+   }
+
+}

@@ -1,0 +1,32 @@
+.filterTools {
+    &__input {
+        width: 320px;
+        height: 36px;
+        border: 1px solid #D8E2EE;
+        border-radius: 18px;
+        padding-left: 32px;
+        padding-top: 5px;
+        font-size: 16px;
+        &::placeholder {
+            color: #B6C2D2;
+            font-size: 16px;
+
+        }
+
+        &:focus {
+            outline: solid 2px rgba(42, 123, 228, 1);
+            
+         }
+    }
+
+    &__icon_wrapper {
+        position: relative;
+        
+    }
+    
+    &__icon {
+        position: absolute;
+        top: -1px;
+        left: 14px;
+    }
+}
