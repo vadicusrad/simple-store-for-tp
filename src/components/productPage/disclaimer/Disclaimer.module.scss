@@ -2,13 +2,18 @@
     height: 118px;
     width: 1204px;
     background: rgba(217, 217, 217, 0.22);
-    
     font-weight: 600;
     font-size: 22px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #6F7885;
 
-color: #6F7885;
+    @media (max-width: 1199px){
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+        padding: 20px;
+    }
 
 }

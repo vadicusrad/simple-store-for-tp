@@ -7,6 +7,11 @@
     padding: 17px 52px 17px 22px;
     color: #4D5969;
 
+    @media (max-width: 1199px){
+        padding: 0;
+        height: 100px;
+    }
+
     &__img {
         width: 60px;
         height: 40px;
@@ -40,12 +45,22 @@
         width: 150px;
         font-size: 14px;
         text-align: center;
+
+        @media (max-width: 1199px){
+            display: none;
+            
+        }
     }
 
     &__dates {
         width: 124px;
         font-size: 14px;
         text-align: center;
+
+        @media (max-width: 1199px){
+            display: none;
+            
+        }
     }
 
    

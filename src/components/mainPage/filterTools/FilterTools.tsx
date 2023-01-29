@@ -24,10 +24,8 @@ const FilterTools = () => {
 
     return (
         <div className={styles.filterTools}>
-            <span className={styles.filterTools__icon_wrapper}>
-                <span className={styles.filterTools__icon}>
-                    <LupeIcon />
-                </span>
+            <span className={styles.filterTools__icon}>
+                <LupeIcon />
             </span>
 
             <input

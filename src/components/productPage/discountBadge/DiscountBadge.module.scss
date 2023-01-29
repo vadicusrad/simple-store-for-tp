@@ -2,6 +2,12 @@
     position: absolute;
     top: 53px;
     left: 80px;
+
+    @media (max-width: 1199px){
+        top: 62px;
+        left: 17px;
+    }
+    
     &__value {
         position: absolute;
         top: 9px;

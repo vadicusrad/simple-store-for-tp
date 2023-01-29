@@ -7,7 +7,6 @@
         justify-content: space-between;
         align-items: center;
         grid-gap:20px;
-
         padding-left: 22px;
         padding-right: 52px;
         font-weight: 600;
@@ -41,10 +40,20 @@
 
     &__element {
         text-align: left;
+
+        @media (max-width: 1199px){
+            display: none;
+            
+        }
     }
 
     &__link {
         text-decoration: none;
+
+        @media (max-width: 1199px){
+            display: block;        
+            
+        }
     }
     
 

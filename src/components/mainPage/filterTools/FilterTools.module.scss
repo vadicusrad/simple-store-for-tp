@@ -1,4 +1,6 @@
 .filterTools {
+    position: relative;
+
     &__input {
         width: 320px;
         height: 36px;
@@ -16,17 +18,17 @@
         &:focus {
             outline: solid 2px rgba(42, 123, 228, 1);
             
-         }
-    }
+        }
 
-    &__icon_wrapper {
-        position: relative;
-        
+        @media (max-width: 1199px){
+            width: 290px;
+            
+        }
     }
     
     &__icon {
         position: absolute;
-        top: -1px;
+        top: 8px;
         left: 14px;
     }
 }

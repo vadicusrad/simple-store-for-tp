@@ -3,6 +3,13 @@
     justify-content: space-between;
     align-items: end;
 
+    @media (max-width: 1199px){
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
     &__newPrice {
         margin-left: auto;
     }

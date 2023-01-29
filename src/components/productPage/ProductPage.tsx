@@ -45,10 +45,12 @@ const ProductPage = () => {
                     {+currentProduct.discount ? (
                         <DiscountBadge value={currentProduct.discount} />
                     ) : null}
-                    <ProductLogo
-                        url={currentProduct.logo_url}
-                        name={currentProduct.name}
-                    />
+                    <div className={styles.productPage__logo}>
+                        <ProductLogo
+                            url={currentProduct.logo_url}
+                            name={currentProduct.name}
+                        />
+                    </div>
                     <div className={styles.productPage__wrapper}>
                         <img
                             className={styles.productPage__image}
